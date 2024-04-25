@@ -12,6 +12,8 @@ app.use(cors());
 
 app.use('/auth', require('./router/authRouter'));
 
+app.use('/admin', require('./router/adminRouter'));
+
 dbConnection();
 
 //llamamos a un servidor definimos el puerto y ejecutamos un callback que muestre el siguiente mensaje si se levanto correctamente
